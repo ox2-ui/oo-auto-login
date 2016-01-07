@@ -25,7 +25,7 @@ Package.onUse(function(api) {
     // 3rd party
     api.use([
       'lauricio:less-autoprefixer@2.5.0_3',
-      'mquandalle:jade@0.4.5', 'mousetrap:mousetrap@1.4.6_1'
+      'mquandalle:jade@0.4.5', 'mousetrap:mousetrap@1.4.6_1', 'practicalmeteor:faker@2.1.1_1'
     ]);
     api.addFiles('lib/oo-auto-login.jade', C);
     api.addFiles('lib/oo-auto-login.less', C);
