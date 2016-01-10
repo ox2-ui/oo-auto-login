@@ -2,12 +2,12 @@ Package.describe({
   name: 'ox2:auto-login',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'DO NOT USE',
   // URL to the Git repository containing the source code for this package.
   git: 'https://github.com/ox2/oo-auto-login',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
-  documentation: 'README.md',
+  documentation: '',
   debugOnly: true
 });
 
@@ -25,11 +25,16 @@ Package.onUse(function(api) {
     // 3rd party
     api.use([
       'lauricio:less-autoprefixer@2.5.0_3',
-      'mquandalle:jade@0.4.5', 'mousetrap:mousetrap@1.4.6_1', 'practicalmeteor:faker@2.1.1_1'
+      'mquandalle:jade@0.4.5', 'mousetrap:mousetrap@1.4.6_1'
     ]);
-    api.addFiles('lib/oo-auto-login.jade', C);
-    api.addFiles('lib/oo-auto-login.less', C);
-    api.addFiles('lib/oo-auto-login.js', C);
+    api.addFiles('lib/client/oo-auto-login.jade', C);
+    api.addFiles('lib/client/oo-auto-login.less', C);
+    api.addFiles('lib/client/oo-auto-login.js', C);
+    api.addFiles('lib/server/oo-auto-login.js', S);
+});
+
+Npm.depends({
+  'faker': '3.0.1'
 });
 
 Package.onTest(function(api) {
