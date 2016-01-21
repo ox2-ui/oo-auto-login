@@ -1,10 +1,10 @@
 Package.describe({
   name: 'ox2:auto-login',
-  version: '0.0.2',
+  version: '0.1.0',
   // Brief, one-line summary of the package.
   summary: 'DO NOT USE',
   // URL to the Git repository containing the source code for this package.
-  git: 'https://github.com/ox2/oo-auto-login',
+  git: '',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: '',
