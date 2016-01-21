@@ -1,6 +1,6 @@
 Package.describe({
   name: 'ox2:auto-login',
-  version: '0.1.0',
+  version: '0.1.1',
   // Brief, one-line summary of the package.
   summary: 'DO NOT USE',
   // URL to the Git repository containing the source code for this package.
