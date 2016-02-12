@@ -1,6 +1,6 @@
 Package.describe({
   name: 'ox2:auto-login',
-  version: '0.1.1',
+  version: '0.1.3',
   // Brief, one-line summary of the package.
   summary: 'DO NOT USE',
   // URL to the Git repository containing the source code for this package.
@@ -20,7 +20,8 @@ Package.onUse(function(api) {
     // Core
     api.use([
       'templating',
-      'ecmascript'
+      'ecmascript',
+      'accounts-base'
     ]);
     // 3rd party
     api.use([
