@@ -20,12 +20,12 @@ Package.onUse(function(api) {
     // Core
     api.use([
       'templating',
-      'ecmascript'
+      'ecmascript',
+      'less'
     ]);
     // 3rd party
     api.use([
-      'lauricio:less-autoprefixer@2.5.0_3',
-      'mquandalle:jade@0.4.5', 'mousetrap:mousetrap@1.4.6_1'
+      'mquandalle:jade@0.4.9', 'mousetrap:mousetrap@1.4.6_1'
     ]);
     api.addFiles('lib/client/oo-auto-login.jade', C);
     api.addFiles('lib/client/oo-auto-login.less', C);
